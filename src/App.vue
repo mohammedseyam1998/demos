@@ -2,9 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">formValidate</router-link> |
-      <router-link to="/about">About</router-link>|
+      <router-link to="/mixins">Mixins</router-link>|
       <router-link to="/table">table Axios</router-link>|
-      <router-link to="/vuex">Mixins</router-link>|
+      <router-link to="/vuex">Vuex</router-link>|
     </div>
     <router-view/>
   </div>

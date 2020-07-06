@@ -1,12 +1,16 @@
 export default {
     data(){
         return{
-             title:'mohammed'
+             title:'mohammed',
+             content:'hello mohammed this is content from mixins'
         }
     },
     methods: {
-      clicked(value) {
-        alert(value);
+      clicked(v) {
+        alert(v);
+      },
+      mohamemd(){
+          console.log("mohammed seyam")
       }
     }
   };

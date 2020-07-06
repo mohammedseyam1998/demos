@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>{{this.$data.title}} from mixins</h1>
     <ValidationObserver ref="form">
     <form @submit.prevent="onSubmit">
     <div class="row">
@@ -58,7 +59,9 @@
 </template>
 
 <script>
+import printMix from '../mixins/printMix'
 export default {
+  mixins:[printMix],
   data(){
     return{
       form:{
@@ -83,7 +86,7 @@ export default {
 
                 //this.rows.push(response.data.data)
 
-                console.log(response.data.data)
+                console.log(response.data)
                 
 
             }).catch(error => console.log(error))

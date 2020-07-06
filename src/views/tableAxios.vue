@@ -38,6 +38,7 @@ export default {
       rows: [],
     };
   },
+ 
     mounted () {
     this.$axios.get('https://reqres.in/api/users')
             .then((response) => {
@@ -46,10 +47,10 @@ export default {
 
                 this.rows = response.data.data
 
-                console.log(response.data.data)
+                console.log(response.data.data,"mohammed seyam")
                 
 
             }).catch(error => console.log(error))
-  }
+  },
 };
 </script>
